@@ -24,8 +24,10 @@ const ShowsList = () => {
           <div className="bottom-card-elements">
             <div className="details">
               <h4>{show.show.name}</h4>
-              <h6>{show.show.language}</h6>
-              <h6>{show.show.type}</h6>
+              <h6>Rating: {show.show.rating.average?show.show.rating.average:`TBD`}</h6>
+              <h6>Duration (minutes): {show.show.runtime?show.show.runtime:`TBD`}</h6>
+              <h6>Genres: {show.show.genres[0]}</h6>
+              <h6>Year: {show.show.premiered}</h6>
             </div>
             <div className="bottom-card">
 
